@@ -10,11 +10,11 @@ namespace Models {
         private List<IObserver<Command>> observers = new List<IObserver<Command>>();
         public World() {
             Robot r = CreateRobot(0,0,0);
-            r.Move(28, 0, 28);
+            r.Move(28, 0.1, 28);
             VanCar v = CreateVanCar(0, 0, 0);
             v.Move(14, 0, -3);
             Stellage s = CreateStellage(0, 0, 0);
-            s.Move(10, 1, 10);
+            s.Move(11, 1.5, 15);
 
         }
 
