@@ -20,13 +20,13 @@ namespace Models
             this._rY = rotationY;
             this._rZ = rotationZ;
         }
-        //    public override bool Update(int tick)
-        //{
-        //    //Move the robot
-           
-        //        //this.Move(this.x + 0.1, this.y, this.z);
-            
-        //    return base.Update(tick);
-        //}
+        public override bool Update(int tick)
+        {
+            //Move the robot
+
+            this.Move(this.x, this.y, this.z+0.1);
+
+            return base.Update(tick);
+        }
     }
 }

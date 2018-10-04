@@ -10,11 +10,19 @@ namespace Models {
         private List<IObserver<Command>> observers = new List<IObserver<Command>>();
         public World() {
             Robot r = CreateRobot(0,0,0);
-            r.Move(28, 0.1, 28);
+            r.Move(15, 0.1, 4);
             VanCar v = CreateVanCar(0, 0, 0);
             v.Move(14, 0, -3);
-            Stellage s = CreateStellage(0, 0, 0);
-            s.Move(11, 1.5, 15);
+            Stellage s1 = CreateStellage(0, 0, 0);
+            s1.Move(15, 1.5, 11);
+            Stellage s2 = CreateStellage(0, 0, 0);
+            s2.Move(15, 1.5, 19);
+            Stellage s3 = CreateStellage(0, 0, 0);
+            s3.Move(15, 1.5, 27);
+            Node<Stellage> testNode = new Node<Stellage>("E", 14, 10);
+
+            testNode.GiveObject(new Stellage(0, 0, 0, 0, 0, 0));
+            Stellage s = testNode.GetObject();
 
         }
 

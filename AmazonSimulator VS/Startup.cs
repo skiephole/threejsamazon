@@ -92,7 +92,7 @@ namespace AmazonSimulator_VS
             //app.UseHttpsRedirection();
             //app.UseMvc();
 
-            //app.UseDirectoryBrowser(new DirectoryBrowserOptions());
+           // app.UseDirectoryBrowser(new DirectoryBrowserOptions());
         }
     }
 }
