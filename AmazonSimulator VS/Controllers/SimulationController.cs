@@ -13,6 +13,7 @@ namespace Controllers {
     }
     public class SimulationController {
         private World w;
+       
         private List<ObservingClient> views = new List<ObservingClient>();
         private bool running = false;
         private int tickTime = 50;

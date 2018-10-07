@@ -6,6 +6,7 @@ using Controllers;
 namespace Models {
     public class World : IObservable<Command>, IUpdatable
     {
+        
         private List<threeDObjects> worldObjects = new List<threeDObjects>();
         private List<IObserver<Command>> observers = new List<IObserver<Command>>();
         public World() {
@@ -19,13 +20,46 @@ namespace Models {
             s2.Move(15, 1.5, 19);
             Stellage s3 = CreateStellage(0, 0, 0);
             s3.Move(15, 1.5, 27);
-            Node<Stellage> testNode = new Node<Stellage>("E", 14, 10);
 
-            testNode.GiveObject(new Stellage(0, 0, 0, 0, 0, 0));
-            Stellage s = testNode.GetObject();
+            Node A = CreateNode("A", 0, 3);
+            Node B = CreateNode("B", 3, 3);
+            Node C = CreateNode("C", 3, 0);
+            Node D = CreateNode("D", 0, 0);
+            Node E = CreateNode("E", 4.5, 1.5);
+           // List<Node> nodes = new List<Node>();
+            CreateConnection(A, B);
+            CreateConnection(A, D);
+
+            CreateConnection(B, C);
+            CreateConnection(B, D);
+            CreateConnection(B, E);
+
+            CreateConnection(C, E);
+
+            CreateConnection(D, E);
+
+            SearchEngine searchEngine = new SearchEngine(nodes);
+            searchEngine.FindShortestPath(A, C);
+            searchEngine.FindShortestPath(A, D);
+
+            searchEngine.FindShortestPath(D, B);
+
 
         }
 
+        private Node CreateNode(string name, double x, double y)
+        {
+           // List<Node> nodes = new List<Node>();
+            Node n = new Node(name, x, y);
+            nodes.Add(n);
+            return n;
+        }
+
+        private Connection CreateConnection(Node start, Node end)
+        {
+            Connection c = new Connection(start, end);
+            return c;
+        }
         private Robot CreateRobot(double x, double y, double z)
         {
             Robot r = new Robot(x, y, z, 0, 0, 0);

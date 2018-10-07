@@ -23,7 +23,8 @@ namespace Models
         public override bool Update(int tick)
         {
             //Move the robot
-
+            
+           
             this.Move(this.x, this.y, this.z+0.1);
 
             return base.Update(tick);
