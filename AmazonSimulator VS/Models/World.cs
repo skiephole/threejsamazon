@@ -9,6 +9,7 @@ namespace Models {
         
         private List<threeDObjects> worldObjects = new List<threeDObjects>();
         private List<IObserver<Command>> observers = new List<IObserver<Command>>();
+        private List<Node> nodes = new List<Node>();
         public World() {
             Robot r = CreateRobot(0,0,0);
             r.Move(15, 0.1, 4);
