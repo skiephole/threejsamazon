@@ -84,9 +84,13 @@ namespace Models {
 
             searchEngine.FindShortestPath(B, E);
 
-            List<Node> NodeList = new List<Node>();
-            NodeList = searchEngine.FindShortestPath(B, E); 
-            r.GiveDestination(NodeList);
+            List<Node> NodeList1 = new List<Node>();
+            NodeList1 = searchEngine.FindShortestPath(B, H); 
+            r.RouteHeenweg(NodeList1);
+
+            List<Node> NodeList2 = new List<Node>();
+            NodeList2 = searchEngine.FindShortestPath(H, B);
+            r.RouteTerugweg(NodeList2);
         }
 
 

@@ -7,6 +7,7 @@ namespace Models
 {
     public class Stellage : threeDObjects
     {
+        
         public Stellage(double x, double y, double z, double rotationX, double rotationY, double rotationZ)
         {
             this.type = "stellage";
@@ -20,5 +21,6 @@ namespace Models
             this._rY = rotationY;
             this._rZ = rotationZ;
         }
+        
     }
 }
