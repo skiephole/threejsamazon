@@ -32,40 +32,44 @@ namespace Models
             //krijgt de x en y waarde uit de eerste node
             xWaarde = firstNode.X;
             zWaarde = firstNode.Y;
-            
         }
+        
         public override bool Update(int tick)
         {
-            
-            if (xWaarde != this.x)
+            if (zWaarde != Math.Round(z,2))
             {
-                if (xWaarde > this.x)
-                {
-                    this.Move(this.x + 0.1, this.y, this.z);
-
-                }
-                if (xWaarde < this.x)
-                {
-                    this.Move(this.x - 0.1, this.y, this.z);
-                }
-            }
-
-            else if (zWaarde != this.z)
-            {
-                if (zWaarde > this.z)
+                if (zWaarde > Math.Round(z, 2))
                 {
                     this.Move(this.x, this.y, this.z + 0.1);
 
                 }
-                if (xWaarde < this.z)
+                else if (zWaarde < Math.Round(z, 2))
                 {
                     this.Move(this.x, this.y, this.z - 0.1);
                 }
             }
-            else
+            else if (xWaarde != Math.Round(x, 2))
+            {
+                
+                if (xWaarde > Math.Round(x, 2))
+                {
+                    this.Move(this.x + 0.1, this.y, this.z);
+                    
+
+                }
+                else if (xWaarde < Math.Round(x, 2))
+                {
+                    this.Move(this.x - 0.1, this.y, this.z);
+                    
+                }
+            }
+            else if (xWaarde == Math.Round(x, 2) && zWaarde == Math.Round(z, 2))
             {
                 nodeList.RemoveAt(0);
+                GiveDestination(nodeList);
             }
+
+
             return base.Update(tick);
         }
 

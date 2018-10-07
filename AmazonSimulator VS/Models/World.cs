@@ -12,7 +12,7 @@ namespace Models {
         private List<Node> nodes = new List<Node>();
         public World() {
             Robot r = CreateRobot(0,0,0);
-            r.Move(15, 0.1, 4);
+            r.Move(28, 0.1, 15);
             VanCar v = CreateVanCar(0, 0, 0);
             v.Move(14, 0, -3);
             Stellage s1 = CreateStellage(0, 0, 0);
