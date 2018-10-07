@@ -38,13 +38,44 @@ namespace Models {
             CreateConnection(A, B);
             CreateConnection(A, D);
 
+            CreateConnection(B, A);
             CreateConnection(B, C);
-            CreateConnection(B, D);
-            CreateConnection(B, E);
 
-            CreateConnection(C, E);
+            CreateConnection(C, B);
+            CreateConnection(C, F);
 
+            CreateConnection(D, A);
             CreateConnection(D, E);
+            CreateConnection(D, G);
+
+            CreateConnection(E, D);
+            CreateConnection(E, F);
+
+            CreateConnection(F, C);
+            CreateConnection(F, E);
+            CreateConnection(F, I);
+
+            CreateConnection(G, D);
+            CreateConnection(G, H);
+            CreateConnection(G, J);
+
+            CreateConnection(H, G);
+            CreateConnection(H, I);
+
+            CreateConnection(I, F);
+            CreateConnection(I, H);
+            CreateConnection(I, L);
+
+            CreateConnection(J, K);
+            CreateConnection(J, G);
+
+            CreateConnection(K, J);
+            CreateConnection(K, L);
+
+            CreateConnection(L, K);
+            CreateConnection(L, I);
+
+
 
             SearchEngine searchEngine = new SearchEngine(nodes);
             searchEngine.FindShortestPath(A, C);

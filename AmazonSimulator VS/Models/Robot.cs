@@ -25,7 +25,7 @@ namespace Models
             //Move the robot
             
            
-            this.Move(this.x, this.y, this.z+0.1);
+            this.Move(this.x, this.y, this.z+0.02);
 
             return base.Update(tick);
         }
