@@ -78,17 +78,20 @@ namespace Models {
 
 
             SearchEngine searchEngine = new SearchEngine(nodes);
+
             searchEngine.FindShortestPath(A, C);
             searchEngine.FindShortestPath(A, D);
 
-            searchEngine.FindShortestPath(D, B);
+            searchEngine.FindShortestPath(B, E);
 
-
+            List<Node> NodeList = new List<Node>();
+            NodeList = searchEngine.FindShortestPath(B, E); 
+            r.GiveDestination(NodeList);
         }
+
 
         private Node CreateNode(string name, double x, double y)
         {
-           // List<Node> nodes = new List<Node>();
             Node n = new Node(name, x, y);
             nodes.Add(n);
             return n;
