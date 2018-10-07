@@ -22,12 +22,19 @@ namespace Models {
             Stellage s3 = CreateStellage(0, 0, 0);
             s3.Move(15, 1.5, 27);
 
-            Node A = CreateNode("A", 0, 3);
-            Node B = CreateNode("B", 3, 3);
-            Node C = CreateNode("C", 3, 0);
-            Node D = CreateNode("D", 0, 0);
-            Node E = CreateNode("E", 4.5, 1.5);
-           // List<Node> nodes = new List<Node>();
+            Node A = CreateNode("A", 2, 4);
+            Node B = CreateNode("B", 14, 4);
+            Node C = CreateNode("C", 28, 4);
+            Node D = CreateNode("D", 2, 12);
+            Node E = CreateNode("E", 14, 12);
+            Node F = CreateNode("F", 28, 12);
+            Node G = CreateNode("G", 2, 20);
+            Node H = CreateNode("H", 14, 20);
+            Node I = CreateNode("I", 28, 20);
+            Node J = CreateNode("J", 2, 28);
+            Node K = CreateNode("K", 14, 28);
+            Node L = CreateNode("L", 28, 28);
+
             CreateConnection(A, B);
             CreateConnection(A, D);
 
