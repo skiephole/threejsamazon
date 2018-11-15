@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\NHL HBO ICT\\Jaar 2\\Project threejs 3D\\Project Casper\\AmazonMagazijn-master\\AmazonSimulator\\AmazonSimulator.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}

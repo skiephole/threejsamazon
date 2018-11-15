@@ -1,0 +1,14 @@
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\bin\Debug\netcoreapp2.1\AmazonSimulator.deps.json
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\bin\Debug\netcoreapp2.1\AmazonSimulator.runtimeconfig.json
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\bin\Debug\netcoreapp2.1\AmazonSimulator.runtimeconfig.dev.json
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\bin\Debug\netcoreapp2.1\AmazonSimulator.dll
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\bin\Debug\netcoreapp2.1\AmazonSimulator.pdb
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.csprojAssemblyReference.cache
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.csproj.CoreCompileInputs.cache
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.RazorAssemblyInfo.cache
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.RazorAssemblyInfo.cs
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.AssemblyInfoInputs.cache
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.AssemblyInfo.cs
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.RazorTargetAssemblyInfo.cache
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.dll
+D:\NHL HBO ICT\Jaar 2\Project threejs 3D\Project Casper\AmazonMagazijn-master\AmazonSimulator\obj\Debug\netcoreapp2.1\AmazonSimulator.pdb
